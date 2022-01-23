@@ -51,3 +51,21 @@ res.send("Error");
 }
 });
 });
+
+
+app.post("/deleteAcc", (req, res) => {
+var username = req.body.username;
+var password = req.body.password;
+fs.readFile("user.json", "utf8", (err, jsonString) => {
+if(err) {
+console.log("Error reading file");
+}
+var x=JSON.parse(jsonString);
+if(x["username"]==username && x["password"]==password) {
+fs.writeFileSync("user.json", "        ");
+res.send("Delete account successfully");
+}else{
+res.send("Error");
+}
+});
+});   
