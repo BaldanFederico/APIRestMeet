@@ -68,4 +68,18 @@ res.send("Delete account successfully");
 res.send("Error");
 }
 });
-});   
+});
+
+
+app.post("/viewMeet", (req, res) => {
+fs.readFile("meet.json", "utf8", (err, jsonString) => {
+if(err) {
+console.log("Error reading file");
+}else{
+var x = JSON.parse(jsonString);
+res.send(x["name"]+ " , "+x["ADPmeet"]+" ,  "+x["date"]+ " ,  "+x["hour"]);
+}
+});
+});
+
+
