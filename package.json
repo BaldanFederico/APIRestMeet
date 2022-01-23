@@ -1,0 +1,24 @@
+{
+  "name": "apirestmeet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaldanFederico/APIRestMeet.git"
+  },
+  "author": "Baldy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaldanFederico/APIRestMeet/issues"
+  },
+  "homepage": "https://github.com/BaldanFederico/APIRestMeet#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "jsonfile": "^6.1.0"
+  }
+}
